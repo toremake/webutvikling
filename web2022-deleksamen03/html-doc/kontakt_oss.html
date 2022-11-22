@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    
+    <link href="../font/fontawesome-free-6.2.0-web/css/fontawesome.css" rel="stylesheet">
+    <link href="../font/fontawesome-free-6.2.0-web/css/brands.css" rel="stylesheet">
+    <link href="../font/fontawesome-free-6.2.0-web/css/solid.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css-files/hjem.css">
+    <link rel="stylesheet" href="../css-files/content-pages.css">
+    <link rel="stylesheet" href="../css-files/media_queries.css">
+    <title>Kontakt oss</title>
+</head>
+<body>
+    <div class="container">
+    <nav>
+        <h3><a href="hjem.html">KH.dev</a></h3>
+        <a href="javascript:void(0)" id="menu-bars" onclick="showMenu()"><i class="fa-solid fa-bars"></i></a>
+        <ul id="page-menu" >
+            <li><a href="hjem.html">Hjem</a></li>
+            <li><a href="uu_vs_seo.html">UU vs SEO</a></li>
+            <li><a href="cms.html">CMS</a></li>
+            <li><a href="analyse.html">Analyse</a></li>
+            <li><span class="kontakt-btn-nav"><a href="kontakt_oss.html">KONTAK OSS</a></span></li>
+
+        </ul>
+        
+    </nav>
+    <header id="#kontakt-header">
+        <section >
+            <h1 class="content-page-header">
+                Ta Kontakt
+            </h1>
+        </section>
+    </header>
+    <main>
+       <div id="kontakt-alternativer">
+            <section class="kontakt-card">
+                <h3>Ring oss<i class="fa-solid fa-phone card-icon"></i></h3>
+                <p class="card-paragraph">Vår telefon tjeneste er tilgjendelig <b>mandag - fredag</b></p>
+                <p class="card-kontakt-detail">Hovednummer: <a href="tel:+4746231070">+47 462 31 070</a></p>
+            </section>
+            <div class="seperator"></div>
+            <section class="kontakt-card">
+                <h3>Følg oss på sosiale medier <i class="fa-solid fa-globe"></i></h3>
+                <div id="social-icons">
+                    <a href="https://www.instagram.com/khalilmoha_/" class="fa-brands fa-instagram"></a>
+                    <a href="https://www.facebook.com/profile.php?id=100009105693009" class="fa-brands fa-facebook"></a>
+                    <a href="https://twitter.com/Khalilmoha_" class="fa-brands fa-twitter"></a>
+                </div>
+            </section>
+            <div class="seperator"></div>
+            <section class="kontakt-card">
+                <h3>For spesielle hendvendelser<i class="fa-solid fa-envelope card-icon"></i></h3>
+                <p class="card-paragraph">Send oss ditt spørsmål via e-post</p>
+                <a class="card-kontakt-detail" href="mailto:kmsfouk@hiof.no" >kmsfouk@hiof.no</a>
+                <p class="svartid-tekst"><i class="fa-solid fa-clock"></i>svartid: <b>24 timer</b></p>
+            </section>
+            <div class="seperator"></div>
+            <section class="kontakt-card">
+                <h3>Besøk oss<i class="fa-solid fa-location-dot card-icon"></i></h3>
+                <p class="card-paragraph">Har du lyst å ta en prat med oss? Vel vi ønsker deg velkommen</p>
+                <p class="card-kontakt-detail" >Du finner oss i B R A Veien 4, 1757 Halden</p>
+            <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.1882761207871!2d11.350614615851333!3d59.1292502340909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f6cf4d491d%3A0xdd127f6ec81a545d!2sB%20R%20A%20Veien%204%2C%201783%20Halden!5e0!3m2!1sno!2sno!4v1668957828126!5m2!1sno!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+            <div class="seperator"></div>
+            <section class="kontakt-card">
+                <h3>For generelle henvendelser<i class="fa-solid fa-question card-icon"></i></h3>
+                <p class="card-paragraph">Send oss hva du lurer på</p>
+                <form id="kontakt-skjema">
+                    <label for="name" >Navn</label>
+                    <input class="user_input" type="text" name="name" id="name" placeholder="Khalil">
+                    <label for="lastName">Etternavn</label>
+                    <input class="user_input" type="text" name="lastName" id="lastName" placeholder="Sfouk"> 
+                    <label for="e-post">E-post</label>
+                    <input class="user_input" type="email" name="e-post" id="e-post" placeholder="khalil@example.com">
+                    <label for="inquiry">Hva lurer du på?</label>
+                    <textarea name="inquiry"> </textarea>
+                    <button type="submit" id="inquiry">Send</button>
+                    <p class="svartid-tekst"><i class="fa-solid fa-clock"></i>svartid: <b>24 timer</b></p>
+                </form>
+            </section>
+
+
+       </div>
+    </main>
+    <footer>
+        <div id="main-footer">
+            <section class="kontakt-oss">
+                <h2>Kontakt oss:</h2>
+                <ul>
+                    <!-- iconer brukt er importert/henter fra fontawesome -->
+                    <li><i class="fa-solid fa-envelope"></i><a href="mailto:kmsfouk@hiof.no" >kmsfouk@hiof.no</a></li>
+                    <li><i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/khalilmoha_/">Khalilmoha_</a></li>
+                </ul>
+            </section>
+            <section class="snarveier">
+                <h2>Snarveier:</h2>
+                <ul>
+                    <li><a href="hjem.html">Hjem</a></li>
+                    <li><a href="uu_vs_seo.html">UU vs SEO</a></li>
+                    <li><a href="cms.html">CMS</a></li>
+                    <li><a href="analyse.html">Analyse</a></li>
+                </ul>
+            </section>
+        </div>
+    </footer>
+</div>
+<script src="../html-doc/drop-menu.js"></script>
+</body>
+</html>

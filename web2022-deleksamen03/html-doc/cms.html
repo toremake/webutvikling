@@ -1,0 +1,378 @@
+    <!DOCTYPE html>
+    <html lang="nb">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+        
+        <link href="../font/fontawesome-free-6.2.0-web/css/fontawesome.css" rel="stylesheet">
+        <link href="../font/fontawesome-free-6.2.0-web/css/brands.css" rel="stylesheet">
+        <link href="../font/fontawesome-free-6.2.0-web/css/solid.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="../css-files/hjem.css">
+        <link rel="stylesheet" href="../css-files/content-pages.css">
+        <link rel="stylesheet" href="../css-files/tabell.css">
+        <link rel="stylesheet" href="../css-files/artikler.css">
+        <link rel="stylesheet" href="../css-files/media_queries.css">
+        <title>CMS</title>
+    </head>
+    <body>
+        <div class="container">
+        <nav>
+            <h3><a href="hjem.html">KH.dev</a></h3>
+        <a href="javascript:void(0)" id="menu-bars" onclick="showMenu()"><i class="fa-solid fa-bars"></i></a>
+            <ul id="page-menu" >
+                <li><a href="hjem.html">Hjem</a></li>
+                <li><a href="uu_vs_seo.html">UU vs SEO</a></li>
+                <li><a href="cms.html">CMS</a></li>
+                <li><a href="analyse.html">Analyse</a></li>
+                <li><span class="kontakt-btn-nav"><a href="kontakt_oss.html">KONTAK OSS</a></span></li>
+
+            </ul>
+            
+        </nav>
+        <header>
+            <section >
+                <h1 class="content-page-header">
+                    CMS
+                </h1>
+            </section>
+            
+        </header>
+        <main>
+            <div class="back-to-top">
+                <a class="back-to-top-icon" href="#"><i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+            <div class="artikler" id="cms-artikkel">
+                <article>
+                    <h2>Hva er et CMS?</h2>
+                    <p>
+                        CMS står for "Content Management System". 
+                        Navnet i seg selv forklarer hva en CMS er. 
+                        CMS er et system som gir muligheten til å redigere og opprette innhold på nettsider
+                        uansett hva salgs nettside du oppretter, nettbutikker, webapplikasjoner og nettsider 
+                        med hva som helst som innhold (blogg nettside, portofolio osv.)
+                    </p>
+                    <p>
+                        CMS spiller en stor rolle innen moderne webutvikling, den gir utviklere mulighet til å administrere
+                        og redigere på innhold i et sted, med andre ord og lettere sagt at CMS samler utviklere som jobber
+                        på samme nettside i et sted hvor alle får like tilgang til å redigere og administrere nettsiden 
+                        fra sin side. Målet med CMS er dermed å koble sammen "back-end" med "front-end" på en lettere måte 
+                        og på samme base. "back-end" som er ansvarlig for intern administrasjon, altså databaser og systemer
+                        knyttet til nettsiden (for eksempel logg in system) altså alt som ikke vises til folk, og "Front-end" 
+                        som er ansvarlig for ekstern administrasjon, altså hvordan nettsiden skal vises folk, dvs. design av 
+                        nettsiden, interaktivitet av nettsiden med folk som bruker den.
+                    </p>
+                    <h4>CMS typer</h4>
+                    <p>
+                        Det finnes flere CMS typer hvor hver type er relatert til bestemt type nettside. 
+                    </p>
+                    <p>
+                        Vi har følgende CMS typer:
+                    </p>
+                        <ul>
+                            <li><p>Component Content Management System (CCMS)</p></li>
+                            <li><p>Document Management System (DMS)</p></li>
+                            <li><p>Enterprise Content Management System (ECM)</p></li>
+                            <li><p>Web Content Management System (WCMS)</p></li>
+                            <li><p>Digital Asset Management System (DAM)</p></li>
+                        </ul>
+                    
+                    <p>
+                        Hver av typene ovenfor er relatert til en bestemt type nettside. 
+                        For eksempel DMS brukes stort sett for å lage nettsider som håndterer data og filer, 
+                        eksempler på DMS er dropbox og Google Drive. Eller WCMS som blir brukt for å lage
+                        interaktive/dynamiske nettsider uten å kode, Wordpress og wix er eksempler på WCMS. 
+                    </p>
+                    <h4>Headless vs Tradisjonell CMS</h4>
+                    <p>
+                        I et headless CMS ting er separert, dvs. front-end og back-end jobber adskilt fra hverandre,
+                        og dermed er både front-end og back-end ikke begrenset av hvilke teknologier de bruker for 
+                        å utvikle en nettside. Det front-end og back-end utvikler av innhold, funksjonalitet 
+                        og database til nettsiden samles via API. Dette gjør at utviklere har mer fleksibilitet i
+                        hvordan de vil gjøre jobben sin. 
+                    </p>
+                    <p>
+                        Mens i tradisjonell har man alt samlet i et sted. Vi kan ta Wordpress som er et tradisjonell CMS
+                        av typen WCMS (open source) som eksempel, I Wordpress har vi alt samlet på samme sted. Alt av design, 
+                        funksjonalitet og database. Dette kontra headless begrenser hvilke teknologier utviklere kan ta i bruk,
+                        disse begrensninger er pga. mal som blir brukt i for eksempel wordpress, hvor oppbygningen av nettsiden 
+                        er forhåndsdefinert, og dermed kan man ikke legge til ekstra ting enn det malen tilbyr. På grunn av dette
+                        blir Wordpress (tradisjonell CMS) brukt for å lage enkle nettsider som krever litt eller ingen avanserte 
+                        funksjonaliteter, for eksempel en egen nettside eller nettsider for småbedrifter.
+                    </p>
+                    <h4>
+                        Headless eller Tradisjonell?
+                    </h4>
+                    <p>
+                        Som nevnt tidligere at i Headless CMS bruker API for å samle inn innhold (alt av design, funksjonalitet og database)
+                        og publisere den, derfor er det et naturlig valg å velge Headless ovenfor Tradisjonell dersom man har en eksisterende 
+                        nettside og ønsker å iverksette den, da er Headless det beste valget. Grunnet dette er at for å få denne nettsiden til 
+                        å fungere som den skal slipper utviklere å skrive igjen om alle av koder, fordi ved hjelp av API-kall blir den informasjonen 
+                        du trenger hentet, og du kan selv bestemme hvor denne informasjonen skal ligge. Dermed blir Headless et valg for nettsider 
+                        som krever store og avanserte teknologier og funksjonaliteter. 
+                    </p>
+                    <p>
+                        Tradisjonell CMS blir da brukt dersom nettsiden du vil utvikle krever ikke så avanserte og store teknologier og funksjonalitet.
+                        Tradisjonell CMS er derfor et valg dersom man utvikler/lager enklere nettsider. Det kan være en egen nettside, for eksempel en 
+                        portofolio, eller nettsider for bedrifter. Slike nettsider er vanligvis ikke avhengig av teknologier hvor CMS kan sette 
+                        begrensninger. Derfor spiller det ikke så stor rolle om CMS-et begrenser disse teknologien fordi igjen nettsiden du lager 
+                        har ikke behov for de avanserte teknologiene og funksjonalitetene. 
+                    </p>
+                    <p>
+                        For å konkludere, Headless CMS tas i bruk når utviklere har et ønske om å bruke hvilke som helst teknologi for å håndtere
+                        strukturen av nettsiden, dermed tilbyr Headless CMS bedre muligheter, og større frihet til utviklere til å legge inn hva
+                        de inn ønsker av data og innhold. Mens Tradisjonell CMS brukes derimot når nettsiden man ønsker og å lage er ikke avhengig
+                        av avansert teknologier og funksjonaliteter som i Headless CMS. Siden Tradisjonell tilbyr mal hvor friheten og mulighetene 
+                        er begrenset fordi ved bruk av mal så er strukturen på nettsiden forhåndsdefinert. 
+                    </p>
+                </article>
+                <div class="social-share-buttons">
+                    <button class="share-btn facebook-btn" href="#"><i class="fa-brands fa-facebook"></i><b>Share</b> 2.4K</button>
+                    <button class="share-btn twitter-btn" href="#"><i class="fa-brands fa-twitter"></i><b>Share</b> 1K</button>
+                </div>
+                <!-- <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&layout=button_count&size=large&width=110&height=28&appId" width="110" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe> -->
+                <section class="kilder">
+                    <h5>Kilder brukt:</h5>
+                    <ul>
+                        <li><a href="https://www.udig.com/digging-in/traditional-cms-vs-headless-cms/">udig.com (Tradisjonell CMS vs Headless CMS)</a></li>
+                        <li><a href="https://fjellvann.no/hvilket-cms-skal-jeg-velge/?gclid=CjwKCAjw2OiaBhBSEiwAh2ZSP-kYF6C-Meimi-_MG-tkzmMglresgdWzE4AGdGMsWcAeWKY7lsjR0BoCyuoQAvD_BwE">fjellvann.no (Hvilket cms skal jeg velge)</a></li>
+                        <li><a href="https://www.optimizely.com/no/insights/blog/hva-er-et-cms/">optimizely.com (Hva er et CMS?)</a></li>
+                        <li><a href="https://guilty.no/blogg/headless-cms-slik-er-det-til-forskjell-fra-et-tradisjonelt-cms">guilty.com (Headless CMS slik er det til forskjell fra et tradisjonelt CMS)</a></li>
+                    </ul> 
+            </section>
+            </div>
+            <div id="tabell">
+                <div id="tabell-header">
+                    <div id="empty-cell"></div>
+                    <div><h3>Fordeler</h3></div>
+                    <div><h3>Ulemper</h3></div>
+                    <div><h3><span style="color: rgb(90, 204, 90);">Likheter</span> / <span style="color:#f74242 ;">Ulikheter</span></h3></div>
+                    
+                </div>
+                <div class="row" id="row-1">
+                        <div class="row-title"><h3>Drupal (WCMS)</h3></div>
+                        <div class="row-content responsiv-row">Fordeler</div>
+                        <div class="row-content">
+                            <h5>Mobil first prinsippet</h5>
+                                <p>
+                                Drupal setter opp mobil først, og tilbyr derfor støtte for responsivt design
+                                ved å tilby responsive designmaler utviklerer kan ta i bruk.
+                                Dette er hjelper utvide målgruppen og uavhengig av hvilke enhet brukeren bruker.
+                                Med dette garanterer Drupal systemet en smidigere brukeropplevelse.
+                                </p>
+                            <h5>Skalerbare nettsider</h5>
+                                <p>
+                                    Store nettsider som opplever stor trafikk daglig vil ta Drupal som et valg.
+                                    Grunnet dette er at Drupal tilbyr muligheten for å sikre din nettside forsetter å funke
+                                    akkurat som den skal uansett trafikken. Dette er på grunn av det skalerbar oppsette som 
+                                    gjør at nettsiden forsetter å funke jevnt. 
+                                </p>
+                            <h5>Flerspråklighet</h5>
+                                <p>
+                                Dersom målgruppene til din nettside er Flerspråklige, tilbyr Drupal Flerspråklighet tjenesten 
+                                så gjør det lettere for utviklere å administrere samme innhold på en enkel og rask måte 
+                                på flere språk slik at de forskjellige
+                                målgruppene får en bedre brukeropplevelse.
+                                </p>
+                            </div>
+                        <div class="row-content responsiv-row">Ulemper</div>
+                        <div class="row-content">
+                            <h5>Brukervennlighet</h5>
+                                <p>
+                                    Drupal er ikke for alle. En av mest kjente ulempene ved bruk av Drupal er dårlig Brukervennlighet.
+                                    Dette er fordi for å kunne ta bruke Drupal som CMS for å bygge opp nettsider, trenger man en forhåndskunnskap
+                                    i programmeringsspråk relatert til webutvikling, blant annet PHP, HTML, JS osv. for å kunne
+                                    administrere nettsiden du utvikler
+                                </p>
+                            <h5>Avansert funksjoner</h5>
+                                <p>
+                                    For å kunne bruke Drupal er man nødt til å lese mye dokumentasjon som går ut på
+                                    de grunnleggende funksjoner i Drupal, og dette går også under dårlig brukervennlighet hvor
+                                    ikke alle kan bruke Drupal.
+                                </p>
+                            <h5>Begrenset bruk av maler og utvidelser</h5>
+                                <p>
+                                    Selv om at Drupal tilbyr mange maler og utvidelser men for å kunne ta dem i bruk
+                                    er man nødt til å bruke moduler, dette må man bruke litt langt tid for å installere 
+                                    og lese litt om før installasjon av moduler, maler og utvidelser. Men problemet her
+                                    er at ikke alle moduler er tilgjengelig gratis, en del av dem må kjøpes, dermed kan man 
+                                    ikke bruke alle maler og utvidelser selv om de er tilgjengelig gratis.
+                                </p>
+                        </div>
+                        <div class="row-content  responsiv-row">likheter/ulikheter</div>
+                        <div class="row-content">
+                            <p class="likheter">Flerspråklighet</p>
+                            <p class="likheter">Gratis å bruke (open source)</p>
+                            <p class="likheter">Online tilgang</p>
+                            <p class="ulikheter">Brukervennlig</p>
+                        </div>
+                </div>
+                <div class="row" id="row-2">
+                    <div class="row-title"><h3>Google Drive (DMS)</h3></div>
+                    <div class="row-content responsiv-row">Fordeler</div>
+                        <div class="row-content">
+                            <h5>Enkel grensesnitt</h5>
+                                <p>
+                                    Google Drive har en enkel grensesnitt som gjør enklere for brukere å kunne 
+                                    ta i bruk Google Drive som sin online lagrinsplattform uten vanskeligheter.
+                                    Dette gjør Google Drive en av de mest kjente og brukte DMS.
+                                </p>
+                            <h5>administrering av filer</h5>
+                                <p>
+                                    Google Driv tilbyr flere innbygd tjenester som gjør det lettere for brukere
+                                    å administrere filene. innbygd tjenester som Docs, Sheets osv. gjør det muligh for 
+                                    brukere å redigere filene direkte in platformen uten å måtte forlate eller bruke tilpasset
+                                    programverer.
+                                </p>
+                            <h5>Tilgjengelig på forskjellige enheter</h5>
+                                <p>
+                                    Google har gjort det mulig for brukere å kunne nå sine dokumenter 
+                                    uansett type enhet de tar i bruk. Google drive kan brukes på pc, ipad, tablet og mobil.
+                                </p>
+                            <h5>Rask tilgang til forskjellige filtyper</h5>
+                                <p>
+                                    Google Drive tilbyr raskt søk av filtyper, dette gjør det lettere
+                                    å nå den filtypen man ønsker å bruke. Når man administrere sine dokumenter
+                                    og deler dem etter filtype, blir det letter å nå dem via raskt søk tjenesten, enn å bruke
+                                    tiden ved å lette etter de dokumentene manuelt
+                                </p>
+                        </div>
+                        <div class="row-content responsiv-row">Ulemper</div>
+                        <div class="row-content">
+                            <h5>Online tilgang</h5>
+                                <p>
+                                    Du kan få en offline tilgang til dine dokumenter i Google Drive, men i noen tilfeller er 
+                                    man nødt å være online for å kunne bruke Google Drive, for eksempel når man har lyst å
+                                    dele en dokument, så man må man være online for å kunne dele de dokumentene man ønsker.
+                                </p>
+                            <h5>Begrenset lagringsplass</h5>
+                                <p>
+                                    Google tilbyr en gratis lagringsplass på 15GB, men dette er en ulempe for brukere
+                                    som har behov for mer enn 15GB lagringsplass. for å kunne få en større lagringsplass
+                                    er man nødt til å kjøpe en pakke med ønsket mengde av GB, dette blir brukeren fakturert for
+                                    måndelig. 
+                                </p>
+                            <h5>Begrenset fil størrelse</h5>
+                                <p>
+                                    Brukere av Google Drive har begrensninger for hvor stor filen de laster opp er.
+                                    for eksempel, størrelsen på vanlig word dokument konvertert til Google docx må ikke overstige 50 MB.
+                                </p>
+                        </div>
+                        <div class="row-content  responsiv-row">likheter/ulikheter</div>
+                        <div class="row-content">
+                        
+                            <p class="likheter">Flerspråklighet</p>
+                            <p class="likheter">Gratis å bruke</p>
+                            <p class="likheter">Brukervennlig</p>
+                            <p class="likheter">Online tilgang</p>
+                        
+                        </div>
+            </div>
+                <div class="row" id="row-3">
+                    <div class="row-title"><h3>Shopify (EMS)</h3></div>
+                    <div class="row-content responsiv-row">Fordeler</div>
+                        <div class="row-content">
+                            <h5>Lett å komme i gang</h5>
+                                <p>
+                                    For å kunne bruke Shopify trenger man kun å lage seg en konto, deretter
+                                for å komme i gang velger man seg en mal og legger inn produktene sine.
+                                Bruker av Shopify trenger ikke å have erfaring i koding for å kunne redigere innhold
+                                eller bruke CMS-et
+                                </p>
+                            <h5>Brukervennlighet</h5>
+                                <p>
+                                    Shopify er kjent for sin brukervennlighet med sin enkel grensesnitt som gir 
+                                    brukere mulighet å navigere lettere. Dette er blant grunnene som gjør at 
+                                    nybegynnere innen online buisness bruker Shopify som selge platform. 
+                                </p>
+                            <h5>Tilgang til flere beetalingsprosesser</h5>
+                                <p>
+                                    Shopify tilbyr brukere en bredt tilgang til varierte beetalingsprosesser som gjør det
+                                    lett for selgere å selge sine produkter med forskjellige beetalingsprosesser, samt lettere 
+                                    for kunder rundt i hele verden å betale uten begrensninger.
+                                </p>
+                        </div>
+                        <div class="row-content responsiv-row">Ulemper</div>
+                        <div class="row-content">
+                            <h5>Begrenset design vilkår</h5>
+                                <p>
+                                    Shopify tilbyr sine brukere mange male de kan bruke for sin nettside, men 
+                                    en av ulempene med Shopify er at bruker har ikke full tilatelse til å redigere 
+                                    instrukturen i den malen den har brukt. Dersom du ønsker å redigere noe spesifikt
+                                    så er du i dette tilfelle nødt å få hjelp av profisjonelle Shopify designere som kan 
+                                    hjelpe deg med designen
+                                </p>
+                            <h5>Shopify kan være kostbar</h5>
+                                <p>
+                                    For å kunne ta bruk Shopify er man nødt til å betale en måndelig for nettsiden, samt 
+                                    dersom du har lyst å forbedre nettsiden din er nødt til å kjøpe tjenster og maler som kan
+                                    hjelpe deg å forbedre nettsiden.
+                                </p>
+                            <h5>Salg gebyrer</h5>
+                                <p>
+                                    For å kunne bruke platformen blir brukeren nødt å betale transaksjonsgebyr for hver 
+                                    salg du får. 
+                                </p>
+                        </div>
+                        <div class="row-content  responsiv-row">likheter/ulikheter</div>
+                        <div class="row-content">
+                            <p class="likheter">Flerspråklighet</p>
+                            <p class="likheter">Brukervennlig</p>
+                            <p class="likheter">Online tilgang</p>
+                            <p class="ulikheter">Tilpasningsvennlig</p>
+                            <p class="ulikheter">Kostbar</p>
+                        </div>
+                </div>
+            </div>
+            <section class="kilder-seksjon">
+                <h4>Kilder brukt:</h4>
+                        <h5>Drupal</h5>
+                        <ul>
+                        <li><a href="https://drupal.no/fordeler">Drupal.no (Fordeler)</a></li>
+                        <li><a href="https://www.software-developer-india.com/no/wordpress-vs-drupal-hvilket-cms-er-det-beste-valget/">
+                            software-developer-india.no (Wordpress vs Drupal)
+                        </a></li>
+                        <li><a href="https://www.eurodns.com/blog/drupal-cms-pros-and-cons">eurodns.com (Drupal CMS Pros and Cons)</a></li>
+                        </ul>
+                        <h5>Google Drive</h5>
+                        <ul>
+                        <li><a href="https://www.crazyegg.com/blog/google-drive-review/">crazyegg.com (Google Drive review)</a></li>
+                        <li><a href="https://cloudmounter.net/what-is-google-drive-guide/advantages-and-disadvantages-of-google-drive/">
+                            cloudmounter.net (Advantages and disadvantages of Google-drive)
+                        </a></li>
+                        
+                    </ul>
+                        <h5>Shopify</h5>
+                    <ul>
+                        <li><a href="https://www.boastdigital.com.au/advantages-and-disadvantages-of-shopify/">
+                            boastdigital.com.au (Advantages and disadvantages of Shopify) 
+                        </a></li>
+                    </ul>
+            </section>
+        </main>
+        <footer>
+            <div id="main-footer">
+                <section class="kontakt-oss">
+                    <h2>Kontakt oss:</h2>
+                    <ul>
+                        <!-- iconer brukt er importert/henter fra fontawesome -->
+                        <li><i class="fa-solid fa-envelope"></i><a href="mailto:kmsfouk@hiof.no" >kmsfouk@hiof.no</a></li>
+                        <li><i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/khalilmoha_/">Khalil.moha_</a></li>
+                    </ul>
+                </section>
+                <section class="snarveier">
+                    <h2>Snarveier:</h2>
+                    <ul>
+                        <li><a href="hjem.html">Hjem</a></li>
+                        <li><a href="uu_vs_seo.html">UU vs SEO</a></li>
+                        <li><a href="analyse.html">Analyse</a></li>
+                    </ul>
+                </section>
+            </div>
+        </footer>
+    </div>
+    <script src="../html-doc/drop-menu.js"></script>
+    </body>
+    </html>

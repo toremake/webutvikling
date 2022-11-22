@@ -1,0 +1,185 @@
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    background-position: 50%;
+    animation: bg-animate 1s .0s ease;
+}
+
+@keyframes bg-animate {
+    0%{
+        background-position: 0%;
+    }
+
+    50%{
+        background-position: 91%;
+    }
+    100%{
+        background-position: 50%;
+    }
+}
+header section{
+    margin: auto;
+    padding: 0;
+    text-align: center;
+}
+header section h1{
+    color: #000;
+    font-size: 7rem;
+
+}
+
+#kontakt-alternativer{
+    margin: auto;
+    padding: 0;
+    display: block;
+}
+
+#map{
+    margin: auto;
+    padding: 0;
+    padding-top: 30px;
+    width: 100%;
+}
+
+.card-paragraph{
+    margin-bottom: 10px;
+    color: #000;
+    font-size: 1.3rem;
+
+}
+.card-kontakt-detail{
+    font-weight: 650;
+    font-size: 1.2rem;
+    color: #000;
+}
+.card-kontakt-detail a{
+    color: #000;
+}
+
+.kontakt-card{
+    display: block;
+    padding: 60px;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 50%;
+    border-radius: 10px;
+}
+
+
+.kontakt-card .card-icon{
+    font-size: 2.5rem;
+    color: #30475E;
+    padding-left: 20px;
+}
+
+.kontakt-card h3{
+    font-size: 2.5rem;
+    color: #30475E;
+    margin: 0;
+    margin-bottom:20px;
+}
+
+#kontakt-skjema{
+    margin: 50px;
+}
+#social-icons{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: auto;
+    padding: 0;
+    
+}
+
+#social-icons a{
+    border-radius: 50%;
+    padding: 20px 21px;
+    font-size: 3rem;
+    color: #a43333;
+    text-decoration: none;
+}
+
+
+.user_input{
+    background-color: #5162816c;
+    width: 500px;
+    height: 50px;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+}
+::placeholder{
+    color: #fff;
+    font-style: italic;
+    opacity: 90%;
+}
+
+label{
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 500;
+    
+}
+
+textarea{
+    width: 500px;
+    height: 200px;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #5162816c;
+}
+
+#inquiry{
+    display: block;
+    width: 100px;
+    padding: 10px;
+    border: none;
+    background-color: #30475E;
+    color: #fff;
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+
+.svartid-tekst{
+    font-size: 1.2rem;
+    justify-content: baseline;
+}
+
+.fa-solid.fa-clock{
+    color: #30475E;
+    font-size: 1.2rem;
+    padding-right: 5px;
+}
+
+input:focus, textarea:focus{
+    box-shadow: 0 0 10px #30475E;
+}
+
+
+.social-share-buttons{
+    
+    width: 50%;
+}
+.share-btn{
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.facebook-btn{
+    background-color: #4267B2;
+}
+.twitter-btn{
+    background-color: #1DA1F2;
+
+}
+.fa-brands.fa-facebook, .fa-twitter{
+    padding-right: 10px;
+    color: #fff;
+}

@@ -1,0 +1,203 @@
+#tabell{
+    display: grid;
+    grid-template-areas: "table-header table-header table-header"
+                          "row-1 row-1 row-1"
+                          "row-2 row-2 row-2"
+                          "row-3 row-3 row-3"
+                          ;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 70px 70px 70 70px;
+    margin: 50px;
+}
+
+
+
+#tabell-header{
+    grid-area: table-header;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+
+
+#tabell-header div{ 
+    background-color: #30475E;
+    padding: 25px;
+    text-align: center;
+    border: 2px #a43333  solid;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+#tabell-header div h3{
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+#empty-cell{
+    visibility: hidden;
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.row div{
+    width: 100%;
+    padding: 25px;
+}
+
+.row-content{
+    border: 2px #a43333 solid; 
+}
+
+.row-title{
+    background-color: #30475E;
+    color: #fff;
+    border: 2px #a43333 solid;
+}
+.row-title h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:1.3rem;
+    color: #fff;
+    
+}
+
+.row-content h5{
+    width: fit-content;
+    border-bottom: 3px solid #a43333;
+}
+
+.row-content li{
+    font-size: 1.5rem;
+    list-style: none;
+}
+
+.responsiv-row{
+    display: none;
+ }
+.likheter{
+    border-bottom: 3px solid rgb(90, 204, 90);
+    width: fit-content;
+    font-size: 1.2rem;
+}
+.ulikheter{
+    border-bottom: 3px solid #f74242;
+    width: fit-content;
+    font-size: 1.2rem;
+}
+
+.kilder-seksjon{
+    text-align: left;
+    margin:  12px 50px;
+    
+}
+
+.kilder-seksjon h4{
+    width: fit-content;
+    border-bottom: 3px solid #a43333;
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+}
+.kilder-seksjon h5{
+    margin: 0;
+    margin-top: 1.4rem;
+    font-size: 1.5rem;
+}
+.kilder-seksjon h5::before{
+content: "";
+border-left: 3px solid #7092b4;
+padding: 0 2px;
+}
+
+.kilder-seksjon li a {
+    text-decoration: underline;
+    font-size: 1.2rem;
+    color: #000;
+}
+
+.kilder-seksjon li a:hover{
+    color: #055780;
+}
+
+#row-1{
+    grid-area: row-1;
+    
+}
+#row-2{
+    grid-area: row-2;
+}
+#row-3{
+    grid-area: row-3;
+}
+
+@media screen and (max-width:800px) {
+    #tabell{
+        display: grid;
+        grid-template-areas: "table-header tabel-header"
+                              "row-1"
+                              "row-2"
+                              "row-3"
+                              ;
+        grid-template-columns: repeat(auto-fill, minmax(768px, 3fr));
+        width: 50%;
+    }
+    #tabell-header{
+        display: none;
+        grid-area: table-header;
+    
+    }
+
+    #tabell-header{
+        display: none;
+    }
+    .responsiv-row{
+        display: block;
+        background-color: #7092b4;
+        color: #fff;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    #row-1{
+        grid-area: row-1;
+        display: block;
+        margin-top: 2px;
+
+    }
+    #row-2{
+        grid-area: row-2;
+        display: block;
+        margin-top: 2px;
+    }
+    #row-3{
+        grid-area: row-3;
+        display: block;
+        margin-top: 2px;
+        
+    }
+    #tabell-header div{
+        margin: auto;
+        padding: 15px;
+        text-align: center;
+        border: 2px #a43333 solid;
+        width: 70%;
+        
+    }
+
+    .row div{ 
+        margin: auto;
+        border: 2px #a43333 solid;
+        width: 70%;
+        padding: 15px;
+              
+    }
+
+
+
+    
+}
