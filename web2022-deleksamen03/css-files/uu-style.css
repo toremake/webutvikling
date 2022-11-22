@@ -1,0 +1,136 @@
+header section{
+    font-size: 2.5rem;
+    color: #fff;
+}
+.artikkel-seksjon{
+    
+    display: flex;
+    margin: 60px;
+    background-image: linear-gradient(80deg, #e7e7e797, #fff);
+    padding: 50px;
+    border-radius: 5px;
+
+}
+
+#uu-img-responsiv, #seo-img-responsiv{
+    display: none;
+}
+
+
+#uu-img, #seo-img{
+    width: 35%
+}
+
+.artikkel-seksjon section h2{
+   font-size: 3rem;
+   margin-top: 20px;
+   margin-bottom: 0;
+   text-align: left;
+}
+
+.artikkel-seksjon section p{
+    font-size: 1.7rem;
+    margin-top: .5rem;
+    text-align: left;
+
+}
+
+
+
+.les-artikkel-knapp a{
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #fff;
+    background-color: #a43333;
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+.artikkel-seksjon section a i{
+    margin-top: 3rem;
+    padding-left: .5rem;
+    transition: padding-left .2s ease;
+    
+}
+.artikkel-seksjon section a:hover{
+    text-decoration: underline;
+    transition: all .2s ease;
+}
+.artikkel-seksjon section a:hover i{
+    padding-left: 1rem;
+    
+}
+
+
+.artikler{
+    background-image: linear-gradient(180deg, #e0e0e0, #fff);
+    margin: auto;
+    padding: 10px 25px;
+    width: 50%;
+    margin-bottom: 50px;
+}
+
+.artikler h2{
+    font-size: 2rem;
+    text-align: center;
+    border-left: #a43333 2px solid;
+    border-right: #a43333 2px solid;
+    margin-top: 5rem;
+}
+
+
+
+.artikler h3{
+    font-size: 1.5rem;
+    border-bottom: #a43333 2px solid;
+    width: fit-content;
+
+}
+
+.artikler p{
+    font-size: 1.2rem;
+    color: #000;
+    line-height: 25px;
+}
+
+#uu-artikkel blockquote{
+    font-style: italic;
+    color: #055780;
+    font-size: 1.5;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+#uu-artikkel blockquote span{
+    color: #a43333;
+    font-size: 1.3rem;
+
+}
+
+.artikler ul li{
+    line-height: 10px;
+}
+
+.artikler h4{
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+
+}
+
+.artikler h4::before{
+    content: "";
+    border-left: 3px #a43333 solid;
+    padding-right: 10px;
+}
+.lover{
+    color: #055780;
+    font-weight: 500;
+    font-style: italic;
+}
+#link-to-uutilsynet{
+    font-size: 1.2rem;
+    color: #a43333;
+    font-weight: bold;
+
+} 
+
+

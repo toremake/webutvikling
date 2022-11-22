@@ -1,0 +1,343 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #fff;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+.container{
+    display: grid;
+    grid-template-areas: "nav nav nav"
+                          "header header header"
+                          "main main main"
+                          "footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 70px 500px auto 90px;
+}
+#menu-bars{
+    display: none;
+}
+nav{ 
+    background-color: #a43333;  
+    grid-area: nav;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+nav h3 a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #fff;  
+}
+
+nav ul{
+    display: flex ;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 2rem;
+    font-size: 19px;
+    padding: 0;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+    transition: .2s;
+   
+}
+
+.kontakt-btn-nav a{
+    color:#a43333 ;
+    font-weight: bold;
+}
+
+.kontakt-btn-nav{
+    background: #fff;    
+    padding: 10px 30px;
+    border-radius: 5px;
+    transition: all .2s ease-in;
+   
+}
+
+.kontakt-btn-nav:hover { 
+    color: #fff;
+    background-color: #30475E;
+    cursor: pointer;
+    transition: background .2s;
+    text-decoration: none;
+    
+}
+
+
+header{
+    grid-area: header;
+    /* bildet src: bildet hentet fra https://getwaves.io/ wave-generator*/
+    background-size: cover;
+    background-image: url("../img/wave\ \(2\).svg"); 
+    background-position: 50%;
+    display: flex;
+    align-items: center;
+    animation: bg-animate 1s .1s ease;
+    
+}
+
+@keyframes bg-animate {
+    0%{
+        background-position: 0%;
+    }
+
+    50%{
+        background-position: 91%;
+    }
+
+    100%{
+        background-position: 50%;
+    }
+}
+
+
+header section{
+    width: 65%;
+    padding: 30px 60px;
+}
+
+header section h1{
+    color: #000;
+    font-size: 3.5rem;
+    margin: 0;
+    padding-top: 100px;
+}
+
+header section p{
+    color: #000;
+    font-size: 1.5rem;
+    padding-top: 10px;
+}
+
+main{
+    grid-area: main;
+    position: relative;
+}
+
+.back-to-top{
+    position: absolute;
+    top: 120vh;
+    bottom: 5rem;
+    right: 1rem;
+    z-index: 1;
+}
+
+.back-to-top-icon{
+    display: inline-block;
+    position: sticky;
+    top: 90vh;
+    color: #fff;
+    font-size: 1.2rem;
+    background-color: #000;
+    border-radius: 50%;
+    padding: 20px 25px;
+    
+}
+
+.seperator{
+    width: 200px;
+    border: 1px #a43333 solid;
+    height: 0;
+    margin: auto;
+    padding: 0;
+    
+}
+
+.intro-section{
+
+    width: 45%;
+    margin: 100px 60px;
+    color: #30475E;
+    
+
+}
+
+.intro-section p{
+    color: #30475E;
+    font-size: 1.5rem;
+
+}
+
+.intro-section p a{
+    color: #30475E;
+    transition: all .2s ease;
+
+}
+
+.intro-section p a:hover{
+    color: #a43333;
+    transition: .2s;
+
+}
+
+#kontakt-btn-main{
+    margin: 60px 0;
+}
+
+.kontakt-btn-main{
+    text-decoration: none;
+    font-weight: 650;
+    font-size: 1.5rem;
+    background-color: #fff;
+    border: 2px solid #a43333;
+    color: #a43333;
+    padding: 10px 30px;
+    margin: 0;
+    border-radius: 5px;
+    transition: all .2s ease-in;
+}
+
+.kontakt-btn-main:hover{
+    color: #fff;
+    background-color: #a43333;
+    cursor: pointer;
+    border: 2px solid #a43333;
+    box-shadow: -10px 10px #30475E;
+}
+
+.artikkel-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: calc(100%-60px);
+    margin: 30px 60px;
+}
+
+main section h2{
+    flex-basis: 100%;
+    color: #30475E;
+    font-size: 35px;
+    
+}
+
+main .artikkel-section article{
+    background-color: #30475E;
+    border-radius: 20px;
+    width: 30%;
+    padding: 10px;
+    transition: all .2s ease-in;
+    transition-delay: .1s;
+}
+
+main .artikkel-section article:hover{
+    scale: 105%;
+    transition: all .5s cubic-bezier(0.42, 0, 0.4, 1.36);
+    cursor: pointer;
+    box-shadow: 10px 10px #a43333;
+}
+
+main section article img{
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+main article ul{
+    list-style: none;
+    padding: 0 40px;
+}
+
+
+main section article ul li h3{
+    font-size: 20px;
+    color: #fff;
+  margin-bottom:0 ;
+    
+}
+main section article ul li p{
+    margin-top: 1px;
+    margin-bottom: 30px;
+    color: #fff;
+    font-size: 15px;
+
+}
+main section article ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+main section article ul a:hover{
+    text-decoration: underline;
+}
+
+
+footer{
+    grid-area: footer;
+    background-color: #a43333;
+    height: 30vh;
+   
+}
+#main-footer {
+    display: flex;
+    justify-content: space-between;
+    text-align: left; 
+    margin: 20px 19rem;
+    padding: 0 10px;  
+}
+
+
+#main-footer section ul{
+    margin: 0;
+    padding: 0;
+}
+#main-footer section ul li{
+    list-style: none;
+    padding: 5px;
+}
+
+
+
+#main-footer i {
+    color: #fff;
+    margin: 2px 10px;
+    font-size: 1.2rem;
+}
+#main-footer a{
+    text-decoration: none;
+    color: #fff;
+        
+}
+
+#main-footer a:hover{
+    text-decoration: underline;
+    color: #fff;
+        
+}
+#main-footer h2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #fff;
+    text-align: center;
+ } 
+
+
+
+
+ footer section h3{
+    text-align: center;
+    border-top: 2px solid #fff;
+    padding-top: 15px;
+    color: #fff;
+ }
+

@@ -1,0 +1,93 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.artikler{
+    background-image: linear-gradient(180deg, #e0e0e0, #fff);
+
+    margin: auto;
+    padding: 10px 25px;
+    width: 70%;
+    margin-bottom: 50px;
+}
+
+.artikler h2{
+    font-size: 2rem;
+    text-align: center;
+    border-left: #a43333 2px solid;
+    border-right: #a43333 2px solid;
+    margin-top: 5rem;
+}
+
+
+
+.artikler h3{
+    font-size: 1.5rem;
+    border-bottom: #a43333 2px solid;
+    width: fit-content;
+
+}
+
+.artikler p{
+    font-size: 1.2rem;
+    color: #000;
+    line-height: 25px;
+}
+
+.artikler ul li{
+    line-height: 10px;
+}
+
+.artikler h4{
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+}
+
+.artikler h4::before{
+    content: "";
+    border-left: 3px #a43333 solid;
+    padding-right: 10px;
+}
+
+/* UU vs SEO */
+#uu-artikkel blockquote{
+    font-style: italic;
+    color: #055780;
+    font-size: 1.5;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+#uu-artikkel blockquote span{
+    color: #a43333;
+    font-size: 1.3rem;
+
+}
+
+/* CMS */
+.kilder{
+    text-align: left;
+}
+
+.kilder h5{
+    font-size: 1.1rem;
+}
+
+.kilder li{
+    margin: 20px 0;
+}
+.kilder ul li a{
+    padding: 0 10px;
+    border-left: 3px #055780 solid;
+    padding-right: 10px;
+    text-decoration: underline;
+}
+
+.kilder a {
+    color: #000;
+    font-size: 1rem;
+}
+
+.kilder a:hover{
+    color: #055780;
+}
